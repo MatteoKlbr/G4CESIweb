@@ -12,10 +12,10 @@ if (session_status() === PHP_SESSION_NONE) {
 }
 
 // Connexion PDO à la base de données
-define('DB_HOST', 'localhost');
-define('DB_NAME', 'stage_db'); // Adaptez selon votre base
-define('DB_USER', 'root');     // Adaptez selon votre configuration
-define('DB_PASS', 'Fatoumata1?');         // Adaptez selon votre configuration
+define('DB_HOST', '168.63.6.6');  // Remplace par l'IP publique de ton serveur ou ton domaine
+define('DB_NAME', 'stage_db');     // Adapte avec le nom de ta base
+define('DB_USER', 'hedi-rihani');  // Remplace par ton utilisateur MySQL
+define('DB_PASS', 'G4@CESIweb'); // Remplace par ton mot de passe MySQL
 
 $options = [
     PDO::ATTR_ERRMODE            => PDO::ERRMODE_EXCEPTION,
