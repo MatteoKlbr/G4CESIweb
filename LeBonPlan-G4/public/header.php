@@ -16,10 +16,10 @@ if (isset($_SESSION['id'])) {
 
 // Variables de page par défaut (à redéfinir dans chaque page si besoin)
 if (!isset($pageTitle)) {
-    $pageTitle = "LeBonPlan";
+    $pageTitle = "WEB4ALL";
 }
 if (!isset($pageDescription)) {
-    $pageDescription = "Bienvenue sur LeBonPlan, le site de gestion d'offres de stages et d'alternances.";
+    $pageDescription = "Bienvenue sur WEB4ALL, le site de gestion d'offres de stages et d'alternances.";
 }
 ?>
 <!doctype html>
@@ -28,7 +28,7 @@ if (!isset($pageDescription)) {
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <meta name="author" content="Bomou Mahamadou">
+  <meta name="author" content="GROUPE4">
   <meta name="description" content="<?php echo htmlspecialchars($pageDescription); ?>">
   <link rel="stylesheet" href="Style.css">
   <!-- Bootstrap CSS CDN -->
@@ -40,10 +40,12 @@ if (!isset($pageDescription)) {
 </head>
 <body>
   <header>
-    <center><h4>Bienvenue sur LeBonPlan</h4></center>
+    <center><h4>Bienvenue sur WEB4ALL</h4></center>
     <div>
       <center>
-        <img name="logo" src="./images/logo-lbp-header.png" alt="LeBonCoin - Le meilleur site d'offres de stages et d’alternances">
+        <img name="logo"
+	     src=""
+	     alt="WEB4ALL - Le meilleur site d'offres de stages et d’alternances">
       </center>
     </div>
     <nav>
@@ -60,8 +62,8 @@ if (!isset($pageDescription)) {
           </button>
           <a href="logout.php" class="btn btn-primary">Déconnexion</a>
         <?php else: ?>
-          <a href="connexion.php" class="btn btn-primary">Connexion</a>
-          <a href="inscription.php" class="btn btn-primary">Inscription</a>
+          <a href="Connexion.php" class="btn btn-primary">Connexion</a>
+          <a href="Inscription.php" class="btn btn-primary">Inscription</a>
         <?php endif; ?>
       </div>
     </nav>

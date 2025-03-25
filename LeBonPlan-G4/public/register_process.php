@@ -11,22 +11,22 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
     if (empty($nom) || empty($prenom) || empty($email) || empty($motdepasse)) {
         $_SESSION['register_error'] = "Tous les champs sont obligatoires.";
-        header("Location: inscription.php");
+        header("Location: Inscription.php");
         exit;
     }
 
     $userModel = new User($pdo);
     if (!$userModel->register($nom, $prenom, $email, $motdepasse)) {
         $_SESSION['register_error'] = "Cet email est déjà utilisé ou une erreur s'est produite.";
-        header("Location: inscription.php");
+        header("Location: Inscription.php");
         exit;
     } else {
         $_SESSION['register_success'] = "Inscription réussie. Vous pouvez maintenant vous connecter.";
-        header("Location: connexion.php");
+        header("Location: Connexion.php");
         exit;
     }
 } else {
-    header("Location: inscription.php");
+    header("Location: Inscription.php");
     exit;
 }
 
